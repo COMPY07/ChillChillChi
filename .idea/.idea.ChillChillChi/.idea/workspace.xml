@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c0307696-1f00-426b-8d43-afe60c36f31b" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ChillChillChi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChillChillChi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JeoungHun/Entity/Player/PlayerContainer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JeoungHun/Entity/Player/PlayerContainer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JeoungHun/Prefabs/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JeoungHun/Prefabs/Monster.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JeoungHun/Stage/StageManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JeoungHun/Stage/StageManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Renderer2D.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Renderer2D.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Taeng/Scene/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Taeng/Scene/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Taeng/Scene/Room.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Taeng/Scene/Room.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Taeng/Scene/Room/Main Camera Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Taeng/Scene/Room/Main Camera Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Taeng/Scripts/FadeOut.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Taeng/Scripts/FadeOut.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Taeng/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Taeng/Scripts/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
