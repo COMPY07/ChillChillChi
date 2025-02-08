@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0307696-1f00-426b-8d43-afe60c36f31b" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChillChillChi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChillChillChi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Taeng/Scene/Room.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Taeng/Scene/Room.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Taeng/Scripts/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Taeng/Scripts/Main.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Taeng/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Taeng/Scripts/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -13,10 +13,16 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
 
     [SerializeField] private int Scene_Num;
+    private bool check;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    void Start()
+    {
+        check = false;
     }
     void Update()
     {
@@ -29,7 +35,21 @@ public class Player : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        switch (other.tag)
+        if (!check)
+        {
+            switch (other.tag)
+            {
+                // 3 -> redDDAK
+                // 2-> school
+                // 1 -> loop
+                // 0 -> family
+                case "1":
+                    if (Input.GetKeyDown(KeyCode.F))
+                    {
+                        Fade.DOFade(1.0f, 0.9f);
+                        Scene_Num = Convert.ToInt32(other.tag) - 1;
+                        Invoke("Scene_Change", 0.9f);
+                        switch (other.tag)
         {
             // 3 -> redDDAK
             // 2-> school
@@ -41,6 +61,7 @@ public class Player : MonoBehaviour
                     Fade.DOFade(1.0f, 0.9f);
                     Scene_Num = Convert.ToInt32(other.tag) - 1;
                     Invoke("Scene_Change", 0.9f);
+                    check = true;
                 }
 
                 break;
@@ -50,6 +71,7 @@ public class Player : MonoBehaviour
                     Fade.DOFade(1.0f, 0.9f);
                     Scene_Num = Convert.ToInt32(other.tag) - 1;
                     Invoke("Scene_Change", 0.9f);
+                    check = true;
                 }
 
                 break;
@@ -59,6 +81,7 @@ public class Player : MonoBehaviour
                     Fade.DOFade(1.0f, 0.9f);
                     Scene_Num = Convert.ToInt32(other.tag) - 1;
                     Invoke("Scene_Change", 0.9f);
+                    check = true;
                 }
 
                 break;
@@ -68,11 +91,46 @@ public class Player : MonoBehaviour
                     Fade.DOFade(1.0f, 0.9f);
                     Scene_Num = Convert.ToInt32(other.tag) - 1;
                     Invoke("Scene_Change", 0.9f);
+                    check = true;
                 }
 
                 break;
                 
         }
+                    }
+
+                    break;
+                case "2":
+                    if (Input.GetKeyDown(KeyCode.F))
+                    {
+                        Fade.DOFade(1.0f, 0.9f);
+                        Scene_Num = Convert.ToInt32(other.tag) - 1;
+                        Invoke("Scene_Change", 0.9f);
+                    }
+
+                    break;
+                case "3":
+                    if (Input.GetKeyDown(KeyCode.F))
+                    {
+                        Fade.DOFade(1.0f, 0.9f);
+                        Scene_Num = Convert.ToInt32(other.tag) - 1;
+                        Invoke("Scene_Change", 0.9f);
+                    }
+
+                    break;
+                case "4":
+                    if (Input.GetKeyDown(KeyCode.F))
+                    {
+                        Fade.DOFade(1.0f, 0.9f);
+                        Scene_Num = Convert.ToInt32(other.tag) - 1;
+                        Invoke("Scene_Change", 0.9f);
+                    }
+
+                    break;
+                
+            }
+        }
+        
     }
 
     void Scene_Change()
