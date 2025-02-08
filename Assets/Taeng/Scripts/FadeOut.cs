@@ -98,6 +98,7 @@ public class FadeOut : MonoBehaviour
         else
         {
             fadeImage.GetComponent<Image>().DOFade(0f, 0.9f);
+            RoomManager._instance.start = 1;
         }
     }
 }
