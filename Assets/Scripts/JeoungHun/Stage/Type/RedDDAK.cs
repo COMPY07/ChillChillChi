@@ -56,7 +56,7 @@ public class RedDDAK : BaseStage
             clickCountText.text = "클릭 횟수: " + clickedCount; // 클릭 횟수 업데이트
             Destroy(newObj);
         });
-        
+        StartCoroutine(DestroyObjectAfterTime(newObj, 1f));
         base.End();
     }
 
@@ -79,7 +79,7 @@ public class RedDDAK : BaseStage
 
         
         // 1초 뒤에 오브젝트를 자동으로 삭제하는 코루틴 실행
-        // StartCoroutine(DestroyObjectAfterTime(newObj, 1f));
+        
     }
 
     // 오브젝트를 일정 시간 후에 삭제하는 코루틴

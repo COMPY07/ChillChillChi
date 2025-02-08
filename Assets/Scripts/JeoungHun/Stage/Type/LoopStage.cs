@@ -44,8 +44,9 @@ public class LoopStage: BaseStage {
         
         GameObject playerObject = bsp.SpawnPlayer(player, playerSpawnSetting);
         StageManager.Instance.SetPlayerObject(playerObject);
-
+        
         originPosition = playerObject.transform.GetChild(1).transform.position;
+        spawnObjects.Add(playerObject);
         base.Begin();
     }
 
