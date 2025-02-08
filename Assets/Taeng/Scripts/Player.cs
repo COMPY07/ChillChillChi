@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float Speed = 5;
     [SerializeField] private Vector2 MoveDir;
     [SerializeField] private Image Fade;
+    private Animator anim;
     
     private Rigidbody2D rb;
 
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour
 
     void Awake()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         for (int i = 0; i < 4; i++)
         {
@@ -37,8 +39,40 @@ public class Player : MonoBehaviour
 
         // Vector2를 Vector3로 변환하여 이동 처리
         rb.linearVelocity= MoveDir;
+        
+        UpdateAnimation();
     }
-
+    void UpdateAnimation()
+    {
+        if (MoveDir.magnitude > 0.1f)
+        {
+            if (Mathf.Abs(MoveDir.x) > Mathf.Abs(MoveDir.y))
+            {
+                if (MoveDir.x > 0)
+                    anim.Play("Walk_Right");
+                else
+                    anim.Play("Walk_Left");
+            }
+            else
+            {
+                if (MoveDir.y > 0)
+                    anim.Play("Walk_Up");
+                else
+                    anim.Play("Walk_Down");
+            }
+        }
+        else
+        {
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("Walk_Up"))
+                anim.Play("Idle_Up");
+            else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Walk_Down"))
+                anim.Play("Idle_Down");
+            else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Walk_Left"))
+                anim.Play("Idle_Left");
+            else if (anim.GetCurrentAnimatorStateInfo(0).IsName("Walk_Right"))
+                anim.Play("Idle_Right");
+        }
+    }
     void OnTriggerStay2D(Collider2D other)
     {
         if (!check)

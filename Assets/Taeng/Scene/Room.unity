@@ -893,6 +893,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1956925088 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2702152030142811203, guid: 44cf45f2e4bdc4c3fab5dec1f0e9e13b, type: 3}
+  m_PrefabInstance: {fileID: 5625472141040175901}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1956925095
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956925088}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3aee8561aa40049709fecda0a13d1fc5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &2006027690 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3020526519496869341, guid: 44cf45f2e4bdc4c3fab5dec1f0e9e13b, type: 3}
@@ -1060,6 +1087,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3027826314649544096, guid: 44cf45f2e4bdc4c3fab5dec1f0e9e13b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 481172002}
+    - targetCorrespondingSourceObject: {fileID: 2702152030142811203, guid: 44cf45f2e4bdc4c3fab5dec1f0e9e13b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1956925095}
   m_SourcePrefab: {fileID: 100100000, guid: 44cf45f2e4bdc4c3fab5dec1f0e9e13b, type: 3}
 --- !u!1 &5625472141040175902 stripped
 GameObject:

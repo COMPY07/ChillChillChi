@@ -151,7 +151,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -1084,7 +1084,46 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Boy  sheet wlaking and Idle_0: -4773090259843747953
+      Boy  sheet wlaking and Idle_1: 1984677849662452121
+      Boy  sheet wlaking and Idle_10: -8140738599973237175
+      Boy  sheet wlaking and Idle_11: 135390682293543465
+      Boy  sheet wlaking and Idle_12: -5217327083566533195
+      Boy  sheet wlaking and Idle_13: 2644470427826970746
+      Boy  sheet wlaking and Idle_14: -2363985171106528594
+      Boy  sheet wlaking and Idle_15: 2946197840255680753
+      Boy  sheet wlaking and Idle_16: 2378865505835650378
+      Boy  sheet wlaking and Idle_17: 6351619812090227977
+      Boy  sheet wlaking and Idle_18: -5422554642695459459
+      Boy  sheet wlaking and Idle_19: 4562747742129800813
+      Boy  sheet wlaking and Idle_2: -3033871622630009632
+      Boy  sheet wlaking and Idle_20: 9068216355434548219
+      Boy  sheet wlaking and Idle_21: 4964124886185892164
+      Boy  sheet wlaking and Idle_22: 6449290731350256346
+      Boy  sheet wlaking and Idle_23: 7874211589421585631
+      Boy  sheet wlaking and Idle_24: -404463930861343433
+      Boy  sheet wlaking and Idle_25: 3974007276763043637
+      Boy  sheet wlaking and Idle_26: 9205126130106187075
+      Boy  sheet wlaking and Idle_27: -496717160106196417
+      Boy  sheet wlaking and Idle_28: 5961019471608719631
+      Boy  sheet wlaking and Idle_29: -6426988931549009038
+      Boy  sheet wlaking and Idle_3: -4414280319426357632
+      Boy  sheet wlaking and Idle_30: 1967457959026721002
+      Boy  sheet wlaking and Idle_31: -5679799642749973698
+      Boy  sheet wlaking and Idle_32: -8613980312162341102
+      Boy  sheet wlaking and Idle_33: -6829190894833151970
+      Boy  sheet wlaking and Idle_34: 876567913312403889
+      Boy  sheet wlaking and Idle_35: -1621006166639952983
+      Boy  sheet wlaking and Idle_36: 1182723704252244325
+      Boy  sheet wlaking and Idle_37: -2649354458775963111
+      Boy  sheet wlaking and Idle_38: -4759024555407258548
+      Boy  sheet wlaking and Idle_4: -8306135357715947243
+      Boy  sheet wlaking and Idle_5: 6251497012279587259
+      Boy  sheet wlaking and Idle_6: -278015507991703718
+      Boy  sheet wlaking and Idle_7: -6639086068326148354
+      Boy  sheet wlaking and Idle_8: 7908254505776688588
+      Boy  sheet wlaking and Idle_9: -8307278895275194786
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
