@@ -26,5 +26,15 @@ MonoBehaviour:
   corridorWidth: 3
   maxRoomPlacementAttempts: 2
   extraCorridorChance: 0.2
-  structures: []
+  structures:
+  - structureName: "\uCD94\uC5B5\uC758 \uC591\uB3D9\uC774"
+    structurePrefab: {fileID: 8470206113731103869, guid: dec0a1e7bb79045bb87cb956db3aa967, type: 3}
+    width: 1
+    height: 1
+    minCount: 1
+    maxCount: 1
+    padding: 0
+    priority: 0
+    requireWallConnection: 1
+    minDistanceFromOthers: 2
   maxPlacementAttempts: 100
