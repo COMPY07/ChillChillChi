@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using DG.Tweening;
+using Manager;
 using TMPro;
 using UnityEngine.SceneManagement;
 
@@ -36,6 +37,9 @@ public class RedDDAK : BaseStage
         startButton.onClick.AddListener(StartGame); // 시작 버튼에 리스너 추가
         clickCountText.text = "클릭 횟수: 0"; // 초기 클릭 횟수
         timeSlider.gameObject.SetActive(false); // 게임 시작 전에는 슬라이더를 숨김
+        
+        Manager.SoundManager.Instance.NextSoundAdd(0, new SoundClip(clip));
+        Manager.SoundManager.Instance.NextSoundForce(0);
     }
 
     public override void End()

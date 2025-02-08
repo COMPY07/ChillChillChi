@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Manager;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -20,7 +21,7 @@ public class BaseStage : MonoBehaviour
         protected BSPGenerator bsp;
 
         protected List<GameObject> spawnObjects;
-        
+        [SerializeField] public AudioClip clip;
         
         public void Awake() {
                 if (setting == null)
@@ -44,6 +45,10 @@ public class BaseStage : MonoBehaviour
 
                         spawnObjects.Add(bsp.SpawnMonster(prefabs, setting));
                 }
+                
+                
+                Manager.SoundManager.Instance.NextSoundAdd(0, new SoundClip(clip));
+                Manager.SoundManager.Instance.NextSoundForce(0);
         }
         
         public virtual void End() {
