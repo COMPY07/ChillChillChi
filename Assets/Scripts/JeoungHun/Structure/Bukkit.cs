@@ -1,9 +1,6 @@
 using UnityEngine;
 
-public class LoopHole : MonoBehaviour
-{
-
-
+public class Bukkit : MonoBehaviour {
     private Transform player;
     private bool check;
     
@@ -22,7 +19,6 @@ public class LoopHole : MonoBehaviour
 
         if (check) return;
         check = true;
-        
         
         StageManager.Instance.getCurrentStage()?.End();
     }
