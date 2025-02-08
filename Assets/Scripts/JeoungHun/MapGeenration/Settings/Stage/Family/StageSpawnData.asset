@@ -15,11 +15,21 @@ MonoBehaviour:
   spawnPairs:
   - spawnSetting:
       spawnName: "\uC0AC\uCC44\uC5C5\uC790"
-      preferredRoomPosition: 2
-      preferredMapPosition: 1
+      preferredRoomPosition: 1
+      preferredMapPosition: 2
       minDistanceFromWalls: 2
       minDistanceFromOtherSpawns: 2
       minDistanceFromPlayer: 10
-      requireLineOfSight: 0
+      requireLineOfSight: 1
+      maxAttempts: 1000
+    prefab: {fileID: 5587730969066759321, guid: 3cc4838e9f2ac4a48b543386351b2628, type: 3}
+  - spawnSetting:
+      spawnName: "\uC0AC\uCC44\uC5C5\uC790"
+      preferredRoomPosition: 1
+      preferredMapPosition: 2
+      minDistanceFromWalls: 2
+      minDistanceFromOtherSpawns: 2
+      minDistanceFromPlayer: 10
+      requireLineOfSight: 1
       maxAttempts: 1000
     prefab: {fileID: 5587730969066759321, guid: 3cc4838e9f2ac4a48b543386351b2628, type: 3}

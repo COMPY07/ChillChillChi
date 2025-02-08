@@ -14,7 +14,7 @@ public class StageManager : Singleton<StageManager> {
 
 
     public void Awake() {
-        LoadStage(0);
+        LoadStage(2);
         base.Awake();
     }
     public bool LoadStage(string name) {

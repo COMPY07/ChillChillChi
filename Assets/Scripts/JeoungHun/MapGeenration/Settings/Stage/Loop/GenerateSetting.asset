@@ -13,18 +13,28 @@ MonoBehaviour:
   m_Name: GenerateSetting
   m_EditorClassIdentifier: 
   generationType: 0
-  mapWidth: 150
-  mapHeight: 150
-  minRoomSize: 10
-  maxIterations: 1
+  mapWidth: 100
+  mapHeight: 100
+  minRoomSize: 5
+  maxIterations: 3
   minRoomDistance: 3
-  maxRoomSizeRatio: 0.8
-  wallTileSettings: {fileID: 11400000, guid: 9ffa595c4cbcb452d982633e4e911cae, type: 2}
+  maxRoomSizeRatio: 0.397
+  wallTileSettings: {fileID: 11400000, guid: 262219564c2b0443cb5f6ecab72c583b, type: 2}
   tilePrefab: {fileID: 2586614752484092535, guid: c6a24b00e6d644b0091e4c2680a0a13d, type: 3}
   floorPrefab: {fileID: 8535912792833273286, guid: 98ee5e4b61e604feca7d4bc9ac794d09, type: 3}
   wallLayerName: Wall
   corridorWidth: 3
-  maxRoomPlacementAttempts: 2
-  extraCorridorChance: 0.2
-  structures: []
-  maxPlacementAttempts: 100
+  maxRoomPlacementAttempts: 3
+  extraCorridorChance: 0.113
+  structures:
+  - structureName: Hole
+    structurePrefab: {fileID: 4522969983163002690, guid: 1b5cf8c57885248e8ad34240b5fcb39a, type: 3}
+    width: 3
+    height: 3
+    minCount: 1
+    maxCount: 1
+    padding: 1
+    priority: 0
+    requireWallConnection: 1
+    minDistanceFromOthers: 2
+  maxPlacementAttempts: 150
