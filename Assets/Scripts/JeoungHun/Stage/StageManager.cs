@@ -61,6 +61,11 @@ public class StageManager : Singleton<StageManager>
 
 
         Room.SetActive(false);
+        for (int i = 0; i < Room.transform.childCount; i++)
+        {
+            GameObject obj = Room.transform.GetChild(i).gameObject;
+            obj.SetActive(false);
+        }
         BaseStage stage = Instantiate(stageObject).gameObject.GetComponent<BaseStage>();
         if (stage == null) return;
         current = stage;
@@ -68,7 +73,12 @@ public class StageManager : Singleton<StageManager>
 
     public void EndStage() {
         if (current != null) Destroy(current.gameObject);
-        Room.SetActive(true);    
+        Room.SetActive(true);
+        for (int i = 0; i < Room.transform.childCount; i++)
+        {
+            GameObject obj = Room.transform.GetChild(i).gameObject;
+            obj.SetActive(true);
+        }
     }
 
     

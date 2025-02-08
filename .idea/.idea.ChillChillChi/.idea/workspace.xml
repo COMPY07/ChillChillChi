@@ -6,10 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c0307696-1f00-426b-8d43-afe60c36f31b" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ChillChillChi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChillChillChi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JeoungHun/CameraMovement/ChasePlayerCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JeoungHun/CameraMovement/ChasePlayerCamera.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/JeoungHun/Entity/Player/PlayerContainer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JeoungHun/Entity/Player/PlayerContainer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JeoungHun/MapGeenration/Settings/Floor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JeoungHun/MapGeenration/Settings/Floor.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/JeoungHun/Prefabs/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JeoungHun/Prefabs/Monster.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/JeoungHun/Stage/StageManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/JeoungHun/Stage/StageManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Renderer2D.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Renderer2D.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Taeng/Scene/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Taeng/Scene/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Taeng/Scene/Room.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Taeng/Scene/Room.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Taeng/Scene/Room/Main Camera Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Taeng/Scene/Room/Main Camera Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Taeng/Scripts/FadeOut.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Taeng/Scripts/FadeOut.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Taeng/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Taeng/Scripts/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,19 +35,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "taeng",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;taeng&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Unity 에디터에 연결.Unity 에디터에 연결">
     <configuration name="유닛 테스트(배치 모드)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.25f1/Unity.app/Contents/MacOS/Unity" />

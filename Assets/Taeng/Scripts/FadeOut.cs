@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
 using TMPro;
 using DG.Tweening;
 using System.IO;
 using Newtonsoft.Json;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine.UI;
 
 public class FadeOut : MonoBehaviour
@@ -29,6 +31,26 @@ public class FadeOut : MonoBehaviour
             fadeImage.GetComponent<Image>().DOFade(0f, 0.9f);
         }
         
+    }
+
+    private void OnEnable()
+    {
+        Invoke("Fade_Enable", 0.5f);
+        
+        
+    }
+
+    void Fade_Enable()
+    {
+        if (RoomManager._instance.start == 1)
+        {
+            fadeImage.GetComponent<Image>().DOFade(0f, 0.9f);
+        }
+    }
+
+    private void OnDisable()
+    {
+        fadeImage.GetComponent<Image>().DOFade(1f, 0.9f);
     }
 
     // JSON 파일에서 대사 로드
