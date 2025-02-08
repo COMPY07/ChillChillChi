@@ -48,6 +48,7 @@ MonoBehaviour:
   setting: {fileID: 11400000, guid: 112771ff200c24c8ba476584d9d31f80, type: 2}
   spawnData: {fileID: 11400000, guid: 63acd074427054820bac39d1aa245f5a, type: 2}
   type: 0
+  clip: {fileID: 8300000, guid: 3cf5f844cad7b4991a6263e0715184a0, type: 3}
   playerSpawnSetting:
     spawnName: PlayerSpawn
     preferredRoomPosition: 0

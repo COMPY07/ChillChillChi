@@ -48,6 +48,7 @@ MonoBehaviour:
   setting: {fileID: 0}
   spawnData: {fileID: 0}
   type: 0
+  clip: {fileID: 8300000, guid: 3cf5f844cad7b4991a6263e0715184a0, type: 3}
   playerPrefab: {fileID: 7442773558860334897, guid: 51e65a224132c498db61400858d835c4, type: 3}
   mainCamera: {fileID: 0}
   backgroundColor: {r: 0, g: 0, b: 0, a: 1}

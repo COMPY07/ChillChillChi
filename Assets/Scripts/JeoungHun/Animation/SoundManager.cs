@@ -21,6 +21,8 @@ namespace Manager
         
 
     }
+    
+    
     class SoundPlay {
         private AudioSource source;
 
@@ -49,6 +51,22 @@ namespace Manager
             return true;
         }
 
+        public bool NextForce() {
+            
+            if(clips.Count <= 0) return false;
+            
+            Stop();
+    
+            SoundClip clip = clips[0];
+            clips.RemoveAt(0);
+    
+            source.volume = clip.volume;
+            source.loop = clip.loop;
+            source.clip = clip.clip;
+    
+            source.Play();
+            return true;
+        }
         public bool Stop()
         {
             source.Stop();
@@ -122,8 +140,9 @@ namespace Manager
         
         public bool NextSoundAdd(int idx, SoundClip clip)
         {
-            Debug.Log(source.Count + " "+clip);
+
             if (idx >= source.Count || clip == null) return false;
+
             source[idx].AddSound(clip);
             return true;
         }
@@ -134,14 +153,24 @@ namespace Manager
                 else {
                     foreach (SoundPlay player in this.source)
                     {
+                        
                         player.Next();
                         yield return new WaitForSeconds(Time.deltaTime);
                     }
                 }
             }
         }
-        
 
+        public void NextSound(int idx)
+        {
+            if (idx >= source.Count) return;
+            source[idx].Next();
+        }
+        public void NextSoundForce(int idx)
+        {
+            if (idx >= source.Count) return;
+            source[idx].NextForce();
+        }
 
         IEnumerator SoundFadeIn(AudioSource source, AudioClip clip,
                                 float increase = 0.1f)
@@ -154,10 +183,6 @@ namespace Manager
 
 
         }
-
-
-
-
 
     }
 }

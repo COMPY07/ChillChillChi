@@ -189,6 +189,7 @@ MonoBehaviour:
   setting: {fileID: 0}
   spawnData: {fileID: 0}
   type: 0
+  clip: {fileID: 8300000, guid: 3cf5f844cad7b4991a6263e0715184a0, type: 3}
   objectPrefab: {fileID: 5060561491503103078, guid: 0c36c9e1cb88141fcb731112cdefa3f8, type: 3}
   canvasTransform: {fileID: 234204823482364667}
   timeSlider: {fileID: 836444016192094501}

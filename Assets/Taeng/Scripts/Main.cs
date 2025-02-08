@@ -18,8 +18,14 @@ public class Main : MonoBehaviour
     [SerializeField] private float duration = 1;
     public void Start()
     {
+        Invoke("realStart", .5f);
         main_Ui[0].GetComponent<RectTransform>().DOAnchorPosX(-1500, duration);
         main_Ui[1].GetComponent<RectTransform>().DOAnchorPosX(1500, duration);
+    }
+
+    private void realStart()
+    {
+        
         StartCoroutine("Cutscene");
     }
     

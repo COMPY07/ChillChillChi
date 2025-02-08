@@ -1,9 +1,13 @@
+using System;
 using DG.Tweening;
+using Manager;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Room_Obj : MonoBehaviour
 {
+    [SerializeField] public AudioClip clip;
+
     [SerializeField] private GameObject[] ColorObj;
     public bool[] Room_Color;
     void Awake()
@@ -85,4 +89,10 @@ public class Room_Obj : MonoBehaviour
         }
     }
 
+
+    public void OnEnable() {
+
+        Manager.SoundManager.Instance.NextSoundAdd(0, new SoundClip(clip));
+        Manager.SoundManager.Instance.NextSoundForce(0);
+    }
 }
