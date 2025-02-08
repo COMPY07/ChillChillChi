@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a37ff8c55fb4794b1cf71bde2e12aea, type: 3}
+  m_Name: DefaultWallSetting
+  m_EditorClassIdentifier: 
+  sprites:
+    defaultWall: {fileID: 1619019385, guid: 32018e618839b41148bce71a1769a7bf, type: 3}
+    wallTop: {fileID: 982608812, guid: 32018e618839b41148bce71a1769a7bf, type: 3}
+    wallBottom: {fileID: 651963092, guid: 32018e618839b41148bce71a1769a7bf, type: 3}
+    wallLeft: {fileID: 190116900, guid: 32018e618839b41148bce71a1769a7bf, type: 3}
+    wallRight: {fileID: 873968816, guid: 32018e618839b41148bce71a1769a7bf, type: 3}
+    cornerOuterTopLeft: {fileID: 0}
+    cornerOuterTopRight: {fileID: 0}
+    cornerOuterBottomLeft: {fileID: 0}
+    cornerOuterBottomRight: {fileID: 0}
+    cornerInnerTopLeft: {fileID: 0}
+    cornerInnerTopRight: {fileID: 0}
+    cornerInnerBottomLeft: {fileID: 0}
+    cornerInnerBottomRight: {fileID: 0}
+    singleWall: {fileID: -404366862, guid: 32018e618839b41148bce71a1769a7bf, type: 3}
+    endTop: {fileID: 651963092, guid: 32018e618839b41148bce71a1769a7bf, type: 3}
+    endBottom: {fileID: 651963092, guid: 32018e618839b41148bce71a1769a7bf, type: 3}
+    endLeft: {fileID: -2022457764, guid: 32018e618839b41148bce71a1769a7bf, type: 3}
+    endRight: {fileID: 2147147104, guid: 32018e618839b41148bce71a1769a7bf, type: 3}
+  sortingLayerName: Wall
+  sortingOrder: 5
