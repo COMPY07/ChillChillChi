@@ -41,8 +41,9 @@ public class BaseStage : MonoBehaviour
                 }
         }
         
-        public virtual void End() {
-                
+        public virtual void End()
+        {
+                StageManager.Instance.EndStage();
         }
 
         public override string ToString()

@@ -56,6 +56,9 @@ public class LoopStage: BaseStage {
             return;
         }
         // 여기 머지 이후 이동
+        
+        base.End();
+
     }
 
     private void teleportPlayer()

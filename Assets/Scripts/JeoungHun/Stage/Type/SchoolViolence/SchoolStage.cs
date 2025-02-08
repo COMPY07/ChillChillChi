@@ -94,6 +94,9 @@ public class SchoolStage : BaseStage {
         
         if(player != null)
             Destroy(player);
+        
+        
+        base.End();
     }
     
     private void Update()

@@ -43,7 +43,7 @@ public class FamilyStage  : BaseStage
     }
 
     public override void End() {
-
+        base.End();
     }
 
 }
