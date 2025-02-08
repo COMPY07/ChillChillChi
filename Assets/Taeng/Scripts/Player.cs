@@ -31,11 +31,15 @@ public class Player : MonoBehaviour
     {
         switch (other.tag)
         {
+            // 3 -> redDDAK
+            // 2-> school
+            // 1 -> loop
+            // 0 -> family
             case "1":
                 if (Input.GetKeyDown(KeyCode.F))
                 {
                     Fade.DOFade(1.0f, 0.9f);
-                    Scene_Num = Convert.ToInt32(other.tag + 1);
+                    Scene_Num = Convert.ToInt32(other.tag) - 1;
                     Invoke("Scene_Change", 0.9f);
                 }
 
@@ -44,7 +48,7 @@ public class Player : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.F))
                 {
                     Fade.DOFade(1.0f, 0.9f);
-                    Scene_Num = Convert.ToInt32(other.tag + 1);
+                    Scene_Num = Convert.ToInt32(other.tag) - 1;
                     Invoke("Scene_Change", 0.9f);
                 }
 
@@ -53,7 +57,7 @@ public class Player : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.F))
                 {
                     Fade.DOFade(1.0f, 0.9f);
-                    Scene_Num = Convert.ToInt32(other.tag + 1);
+                    Scene_Num = Convert.ToInt32(other.tag) - 1;
                     Invoke("Scene_Change", 0.9f);
                 }
 
@@ -62,7 +66,7 @@ public class Player : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.F))
                 {
                     Fade.DOFade(1.0f, 0.9f);
-                    Scene_Num = Convert.ToInt32(other.tag + 1);
+                    Scene_Num = Convert.ToInt32(other.tag) - 1;
                     Invoke("Scene_Change", 0.9f);
                 }
 
@@ -71,8 +75,8 @@ public class Player : MonoBehaviour
         }
     }
 
-    void Scene_Change(int Scene_number)
+    void Scene_Change()
     {
-        SceneManager.LoadScene(Scene_number);
+        StageManager.Instance.LoadStage(Scene_Num);
     }
 }

@@ -36,6 +36,6 @@ public class Main : MonoBehaviour
         yield return new WaitForSeconds(2f);
         Last_Obj.GetComponent<Image>().DOColor(Color.black, 0.9f);
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Room");
     }
 }

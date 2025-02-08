@@ -60,6 +60,7 @@ public class StageManager : Singleton<StageManager>
         if (current != null) Destroy(current.gameObject); // 생각보다 많이 헤비한 연산임.. 여태까지 생성된 놈들 다 삭제여서..
 
 
+        Room.SetActive(false);
         BaseStage stage = Instantiate(stageObject).gameObject.GetComponent<BaseStage>();
         if (stage == null) return;
         current = stage;
