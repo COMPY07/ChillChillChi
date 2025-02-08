@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4d7e9e3d8224b17abb142494d59e4a2, type: 3}
+  m_Name: Default
+  m_EditorClassIdentifier: 
+  generationType: 0
+  mapWidth: 100
+  mapHeight: 100
+  minRoomSize: 10
+  maxIterations: 4
+  minRoomDistance: 3
+  maxRoomSizeRatio: 0.6
+  wallTileSettings: {fileID: 11400000, guid: 705759aa98f59441dba80e8b5ea74457, type: 2}
+  tilePrefab: {fileID: 1399776764625422968, guid: 71025b1e68b4b45299d9a71227cdbb60, type: 3}
+  floorPrefab: {fileID: 4850544891602659150, guid: edcaa0faf18794fdea643526bd89238b, type: 3}
+  wallLayerName: Wall
+  corridorWidth: 3
+  maxRoomPlacementAttempts: 10
+  extraCorridorChance: 0.2
+  structures:
+  - structureName: test
+    structurePrefab: {fileID: 8629366186463606443, guid: c88c988a924cd4789abdbc6634c68059, type: 3}
+    width: 1
+    height: 1
+    minCount: 5
+    maxCount: 10
+    padding: 0
+    priority: 1
+    requireWallConnection: 0
+    minDistanceFromOthers: 4
+  maxPlacementAttempts: 100

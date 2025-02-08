@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a37ff8c55fb4794b1cf71bde2e12aea, type: 3}
+  m_Name: WallTile
+  m_EditorClassIdentifier: 
+  sprites:
+    defaultWall: {fileID: -1893595405, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    wallTop: {fileID: 4549535, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    wallBottom: {fileID: 4549535, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    wallLeft: {fileID: 4549535, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    wallRight: {fileID: 4549535, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    cornerOuterTopLeft: {fileID: -83960150, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    cornerOuterTopRight: {fileID: 1561876709, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    cornerOuterBottomLeft: {fileID: 1561876709, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    cornerOuterBottomRight: {fileID: 4549535, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    cornerInnerTopLeft: {fileID: 1561876709, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    cornerInnerTopRight: {fileID: -1929560786, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    cornerInnerBottomLeft: {fileID: 410245999, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    cornerInnerBottomRight: {fileID: 4549535, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    singleWall: {fileID: -33644253, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    endTop: {fileID: -653030961, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    endBottom: {fileID: -502450245, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    endLeft: {fileID: 4549535, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+    endRight: {fileID: -1929560786, guid: d795b2ee73a0cd84c84594e41f0f80f2, type: 3}
+  sortingLayerName: Wall
+  sortingOrder: 5
