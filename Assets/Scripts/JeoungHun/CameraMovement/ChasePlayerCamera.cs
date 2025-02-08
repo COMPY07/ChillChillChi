@@ -55,7 +55,7 @@ public class ChasePlayerCamera : MonoBehaviour
         lastShakeDirection = Vector3.zero;
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (!target) return;
 
