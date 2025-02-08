@@ -19,8 +19,16 @@ public class FadeOut : MonoBehaviour
 
     void Start()
     {
-        LoadDialogue(); // 대사 로드
-        ShowDialogue(); // 첫 번째 대사 출력
+        if(RoomManager._instance.start == 0)
+        {
+            LoadDialogue(); // 대사 로드
+            ShowDialogue(); // 첫 번째 대사 출력
+        }
+        else
+        {
+            fadeImage.GetComponent<Image>().DOFade(0f, 0.9f);
+        }
+        
     }
 
     // JSON 파일에서 대사 로드
