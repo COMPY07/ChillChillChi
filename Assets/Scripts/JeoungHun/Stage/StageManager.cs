@@ -11,11 +11,11 @@ public class StageManager : Singleton<StageManager>
     [SerializeField] private GameObject[] stages;
 
     [SerializeField] private GameObject Room;
+
+    private int clearNumber;
     
-    public GameObject getPlayerPrefabs()
-    {
-        return playerObject;
-    }
+    
+    public GameObject getPlayerPrefabs() { return playerObject; }
 
 
     public void Awake()
@@ -26,6 +26,7 @@ public class StageManager : Singleton<StageManager>
         }
         
         Room.SetActive(true);
+        clearNumber = 0;
         base.Awake();
     }
 
@@ -79,6 +80,8 @@ public class StageManager : Singleton<StageManager>
             GameObject obj = Room.transform.GetChild(i).gameObject;
             obj.SetActive(true);
         }
+
+        clearNumber++;
     }
 
     
@@ -98,4 +101,9 @@ public class StageManager : Singleton<StageManager>
     }
 
 
+
+    public int getClear()
+    {
+        return clearNumber;
+    }
 }
