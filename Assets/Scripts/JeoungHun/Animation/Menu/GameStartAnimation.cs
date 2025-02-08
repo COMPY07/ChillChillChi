@@ -52,7 +52,8 @@ namespace Menu
 
 
         public void OnStartClick() {
-            SceneManager.LoadScene("Room");
+            Debug.Log("hello");
+            SceneManager.LoadScene("Main");
         }
 
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Manager;
 using UnityEngine;
 
 public class SchoolStage : BaseStage {
@@ -78,6 +79,9 @@ public class SchoolStage : BaseStage {
         stageTimer = 0f;
         waterAttackTimer = waterAttackCooldown;
         textAttackTimer = textAttackCooldown;
+        
+        Manager.SoundManager.Instance.NextSoundAdd(0, new SoundClip(clip));
+        Manager.SoundManager.Instance.NextSoundForce(0);
     }
         
     public override void End() {
