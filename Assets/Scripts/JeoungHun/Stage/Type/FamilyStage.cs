@@ -37,8 +37,11 @@ public class FamilyStage  : BaseStage
             return;
         }
         
+        
         GameObject playerObject = bsp.SpawnPlayer(player, playerSpawnSetting);
+        spawnObjects.Add(playerObject);
         StageManager.Instance.SetPlayerObject(playerObject);
+        Debug.Log(playerObject);
         base.Begin();
     }
 

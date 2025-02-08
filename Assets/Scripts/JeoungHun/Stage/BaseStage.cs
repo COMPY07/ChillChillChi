@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -18,10 +19,14 @@ public class BaseStage : MonoBehaviour
         
         protected BSPGenerator bsp;
 
+        protected List<GameObject> spawnObjects;
+        
+        
         public void Awake() {
                 if (setting == null)
                         Debug.LogError("GeneratorSetting is null!");
-                
+
+                spawnObjects = new List<GameObject>();
                 
                 bsp = this.AddComponent<BSPGenerator>();
                 bsp.GeneratorInit(setting);
@@ -37,12 +42,18 @@ public class BaseStage : MonoBehaviour
                         GameObject prefabs = sp.prefab;
                         SpawnSetting setting = sp.spawnSetting;
 
-                        bsp.SpawnMonster(prefabs, setting);
+                        spawnObjects.Add(bsp.SpawnMonster(prefabs, setting));
                 }
         }
         
-        public virtual void End()
-        {
+        public virtual void End() {
+                foreach (var obj in spawnObjects) {
+                        if (obj == null) continue;
+                        Destroy(obj);
+                }
+                spawnObjects.Clear();
+                
+                
                 StageManager.Instance.EndStage();
         }
 
