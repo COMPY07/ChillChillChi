@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5209973368985651772}
   - component: {fileID: 3710877270361527258}
+  - component: {fileID: 9065118283410737327}
   m_Layer: 0
   m_Name: StageManager
   m_TagString: Untagged
@@ -52,3 +53,12 @@ MonoBehaviour:
   - {fileID: 6840170836616186429, guid: 07e32219ac6a34f54904c32dcfd36c54, type: 3}
   - {fileID: 6840170836616186429, guid: 865a553103b2d4901adc546777466e96, type: 3}
   - {fileID: 6840170836616186429, guid: a6b3302eac6a94185b996d282778b5f5, type: 3}
+  Room: {fileID: 0}
+--- !u!81 &9065118283410737327
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2409194088661339820}
+  m_Enabled: 1
