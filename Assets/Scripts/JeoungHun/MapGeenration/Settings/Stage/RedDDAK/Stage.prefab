@@ -147,6 +147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2866659188409466724}
   - component: {fileID: 3871866254264437648}
+  - component: {fileID: 2783705023888916842}
   m_Layer: 0
   m_Name: Stage
   m_TagString: Untagged
@@ -199,6 +200,14 @@ MonoBehaviour:
   requiredClicks: 30
   Fade: {fileID: 330129838029320149}
   Fade_false: {fileID: 7278597945013349006}
+--- !u!81 &2783705023888916842
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6840170836616186429}
+  m_Enabled: 1
 --- !u!1001 &3393627100284311042
 PrefabInstance:
   m_ObjectHideFlags: 0
