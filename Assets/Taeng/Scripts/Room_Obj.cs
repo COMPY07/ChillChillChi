@@ -2,6 +2,7 @@ using System;
 using DG.Tweening;
 using Manager;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Room_Obj : MonoBehaviour
@@ -89,6 +90,11 @@ public class Room_Obj : MonoBehaviour
         }
     }
 
+
+    public void LateUpdate()
+    {
+        if (StageManager.Instance.getClear() >= 4) { SceneManager.LoadScene("EndCredits"); }
+    }
 
     public void OnEnable() {
 

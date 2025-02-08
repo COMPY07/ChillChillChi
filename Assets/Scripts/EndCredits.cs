@@ -1,3 +1,4 @@
+using Manager;
 using UnityEngine;
 
 public class EndCredits : MonoBehaviour
@@ -8,11 +9,17 @@ public class EndCredits : MonoBehaviour
     private Vector2 endPos;
     private float elapsedTime = 0f;
 
+
+
+    [SerializeField] private AudioClip clip;
     void Start()
     {
         // 초기 시작 위치와 끝 위치 설정
         startPos = contentTransform.anchoredPosition;
         endPos = new Vector2(startPos.x, 0f); // posY를 0으로 설정
+
+        Manager.SoundManager.Instance.NextSoundAdd(0, new SoundClip(clip));
+        Manager.SoundManager.Instance.NextSoundForce(0);
     }
 
     void Update()
