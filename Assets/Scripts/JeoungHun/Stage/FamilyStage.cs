@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class FamilyStage  : BaseStage
@@ -10,14 +11,21 @@ public class FamilyStage  : BaseStage
         base.Awake();
     }
 
+    public void Start() {
+        Debug.Log("Generate");
+        Generate();
+        Begin();
+    }
 
-    public void Generate() {
+    public  void Generate() {
+        
         base.Generate();
+        Debug.Log("Generate Complete");
     }
 
 
     public override void Begin() {
-        GameObject player = StageManager.Instance.getPlayerObject();
+        GameObject player = StageManager.Instance.getPlayerPrefabs();
 
         if (player == null) {
             Debug.LogError("The player object is null in the StageManager!");
@@ -29,7 +37,8 @@ public class FamilyStage  : BaseStage
             return;
         }
         
-        bsp.SpawnPlayer(player, playerSpawnSetting);
+        GameObject playerObject = bsp.SpawnPlayer(player, playerSpawnSetting);
+        StageManager.Instance.SetPlayerObject(playerObject);
         base.Begin();
     }
 

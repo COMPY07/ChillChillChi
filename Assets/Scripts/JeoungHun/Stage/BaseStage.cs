@@ -42,11 +42,16 @@ public class BaseStage : MonoBehaviour
         }
         
         public virtual void End() {
+                
         }
 
         public override string ToString()
         {
                 return stageName;
+        }
+
+        public bool ValidPosition(Vector3 pos) {
+                return bsp.GetRoomFromPosition(pos) != null;
         }
         
         

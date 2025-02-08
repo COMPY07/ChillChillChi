@@ -8,4 +8,7 @@ public class BSPRoom
         this.width = width;
         this.height = height;
     }
+    
+    
+    
 }

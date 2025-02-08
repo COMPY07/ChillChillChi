@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48a096f9f2a43939ec3ef4cb206aafc, type: 3}
+  m_Name: StageSpawnData
+  m_EditorClassIdentifier: 
+  spawnPairs:
+  - spawnSetting:
+      spawnName: "\uC0AC\uCC44\uC5C5\uC790"
+      preferredRoomPosition: 2
+      preferredMapPosition: 1
+      minDistanceFromWalls: 2
+      minDistanceFromOtherSpawns: 2
+      minDistanceFromPlayer: 10
+      requireLineOfSight: 0
+      maxAttempts: 1000
+    prefab: {fileID: 5587730969066759321, guid: 3cc4838e9f2ac4a48b543386351b2628, type: 3}

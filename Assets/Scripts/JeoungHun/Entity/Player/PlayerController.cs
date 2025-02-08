@@ -19,7 +19,7 @@ public class PlayerController : BaseEntity {
         
         if (characterSprite == null)
             characterSprite = GetComponent<SpriteRenderer>();
-        
+        speed *= 5;
         currentSpeed = speed;
     }
 

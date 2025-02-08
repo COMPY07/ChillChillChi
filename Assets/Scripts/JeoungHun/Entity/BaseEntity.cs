@@ -15,7 +15,7 @@ public class BaseEntity : MonoBehaviour
 
     protected float hp;
     [Header("Movement Settings")]
-    [SerializeField] protected float speed;
+    [Range(1, 100)] [SerializeField] protected int speed;
 
     
     public bool Damaged(float damage)
@@ -30,7 +30,7 @@ public class BaseEntity : MonoBehaviour
         return hp;
     }
 
-    public float GetSpeed()
+    public int GetSpeed()
     {
         return speed;
     }

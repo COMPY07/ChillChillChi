@@ -216,7 +216,7 @@ public class BSPGenerator : MonoBehaviour{
                         WallType wallType = DetermineWallType(x, y);
                         ApplyWallSprite(wallRenderer, wallType);
                         
-                        wallRenderer.sortingLayerName = setting.wallTileSettings.sortingLayerName;
+                        // wallRenderer.sortingLayerName = setting.wallTileSettings.sortingLayerName;
                         wallRenderer.sortingOrder = setting.wallTileSettings.sortingOrder;
                     }
 
@@ -232,7 +232,7 @@ public class BSPGenerator : MonoBehaviour{
                     SpriteRenderer floorRenderer = floor.GetComponent<SpriteRenderer>();
                     if (floorRenderer != null)
                     {
-                        floorRenderer.sortingLayerName = "Floor";
+                        // floorRenderer.sortingLayerName = "Floor";
                         floorRenderer.sortingOrder = 0;
                     }
                 }
@@ -397,7 +397,7 @@ public class BSPGenerator : MonoBehaviour{
             SpriteRenderer renderer = player.GetComponent<SpriteRenderer>();
             if (renderer != null)
             {
-                renderer.sortingLayerName = "Player";
+                // renderer.sortingLayerName = "Player";
                 renderer.sortingOrder = 10;
             }
 
@@ -407,7 +407,7 @@ public class BSPGenerator : MonoBehaviour{
                 SpriteRenderer childRenderer = child.GetComponent<SpriteRenderer>();
                 if (childRenderer != null)
                 {
-                    childRenderer.sortingLayerName = "Player";
+                    // childRenderer.sortingLayerName = "Player";
                     childRenderer.sortingOrder = 10;
                 }
             }
@@ -455,7 +455,7 @@ public class BSPGenerator : MonoBehaviour{
                 SpriteRenderer renderer = monster.GetComponent<SpriteRenderer>();
                 if (renderer != null)
                 {
-                    renderer.sortingLayerName = "Monster";
+                    // renderer.sortingLayerName = "Monster";
                     renderer.sortingOrder = 5;
                 }
 
@@ -465,7 +465,7 @@ public class BSPGenerator : MonoBehaviour{
                     SpriteRenderer childRenderer = child.GetComponent<SpriteRenderer>();
                     if (childRenderer != null)
                     {
-                        childRenderer.sortingLayerName = "Monster";
+                        // childRenderer.sortingLayerName = "Monster";
                         childRenderer.sortingOrder = 5;
                     }
                 }
@@ -516,7 +516,7 @@ public class BSPGenerator : MonoBehaviour{
             SpriteRenderer renderer = monster.GetComponent<SpriteRenderer>();
             if (renderer != null)
             {
-                renderer.sortingLayerName = "Monster";
+                // renderer.sortingLayerName = "Monster";
                 renderer.sortingOrder = 5;
             }
             
@@ -525,7 +525,7 @@ public class BSPGenerator : MonoBehaviour{
                 child.gameObject.layer = monster.layer;
                 SpriteRenderer childRenderer = child.GetComponent<SpriteRenderer>();
                 if (childRenderer != null) {
-                    childRenderer.sortingLayerName = "Monster";
+                    // childRenderer.sortingLayerName = "Monster";
                     childRenderer.sortingOrder = 5;
                 }
             }
@@ -554,7 +554,7 @@ public class BSPGenerator : MonoBehaviour{
             Debug.LogWarning("Map generation is not complete. Cannot find room.");
             return null;
         }
-
+        
         return rooms.FirstOrDefault(room =>
             position.x >= room.x && position.x < room.x + room.width &&
             position.y >= room.y && position.y < room.y + room.height);
@@ -850,7 +850,7 @@ public class BSPGenerator : MonoBehaviour{
         var renderer = player.GetComponent<SpriteRenderer>();
         if (renderer != null)
         {
-            renderer.sortingLayerName = "Player";
+            // renderer.sortingLayerName = "Player";
             renderer.sortingOrder = 10;
         }
 
@@ -860,7 +860,7 @@ public class BSPGenerator : MonoBehaviour{
             var childRenderer = child.GetComponent<SpriteRenderer>();
             if (childRenderer != null)
             {
-                childRenderer.sortingLayerName = "Player";
+                // childRenderer.sortingLayerName = "Player";
                 childRenderer.sortingOrder = 10;
             }
         }
@@ -873,7 +873,7 @@ public class BSPGenerator : MonoBehaviour{
         var renderer = monster.GetComponent<SpriteRenderer>();
         if (renderer != null)
         {
-            renderer.sortingLayerName = "Monster";
+            // renderer.sortingLayerName = "Monster";
             renderer.sortingOrder = 5; 
         }
 
@@ -883,7 +883,7 @@ public class BSPGenerator : MonoBehaviour{
             var childRenderer = child.GetComponent<SpriteRenderer>();
             if (childRenderer != null)
             {
-                childRenderer.sortingLayerName = "Monster";
+                // childRenderer.sortingLayerName = "Monster";
                 childRenderer.sortingOrder = 5;
             }
         }
@@ -896,7 +896,7 @@ public class BSPGenerator : MonoBehaviour{
         var renderer = structure.GetComponent<SpriteRenderer>();
         if (renderer != null)
         {
-            renderer.sortingLayerName = "Structure";
+            // renderer.sortingLayerName = "Structure";
             renderer.sortingOrder = 2;
         }
 
@@ -906,7 +906,7 @@ public class BSPGenerator : MonoBehaviour{
             var childRenderer = child.GetComponent<SpriteRenderer>();
             if (childRenderer != null)
             {
-                childRenderer.sortingLayerName = "Structure";
+                // childRenderer.sortingLayerName = "Structure";
                 childRenderer.sortingOrder = 2;
             }
         }
@@ -1211,7 +1211,7 @@ public class BSPGenerator : MonoBehaviour{
         var renderer = obj.GetComponent<SpriteRenderer>();
         if (renderer != null)
         {
-            renderer.sortingLayerName = sortingLayerName;
+            // renderer.sortingLayerName = sortingLayerName;
             renderer.sortingOrder = sortingOrder;
         }
 
@@ -1220,7 +1220,7 @@ public class BSPGenerator : MonoBehaviour{
             var childRenderer = child.GetComponent<SpriteRenderer>();
             if (childRenderer != null)
             {
-                childRenderer.sortingLayerName = sortingLayerName;
+                // childRenderer.sortingLayerName = sortingLayerName;
                 childRenderer.sortingOrder = sortingOrder;
             }
         }
