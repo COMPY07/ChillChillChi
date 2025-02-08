@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0307696-1f00-426b-8d43-afe60c36f31b" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Taeng/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Taeng/Scripts/Player.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c0307696-1f00-426b-8d43-afe60c36f31b" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
