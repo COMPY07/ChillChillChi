@@ -1061,6 +1061,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -126.3086
       objectReference: {fileID: 0}
+    - target: {fileID: 8594297655351495996, guid: 44cf45f2e4bdc4c3fab5dec1f0e9e13b, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 72ea396b634d841ab893f72131f298ce, type: 2}
+    - target: {fileID: 8594297655351495996, guid: 44cf45f2e4bdc4c3fab5dec1f0e9e13b, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 8087223715798529186, guid: 72ea396b634d841ab893f72131f298ce, type: 2}
+    - target: {fileID: 8594297655351495996, guid: 44cf45f2e4bdc4c3fab5dec1f0e9e13b, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8883089920497415560, guid: 44cf45f2e4bdc4c3fab5dec1f0e9e13b, type: 3}
       propertyPath: clip
       value: 
