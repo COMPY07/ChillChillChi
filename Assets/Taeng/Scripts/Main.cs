@@ -15,15 +15,16 @@ public class Main : MonoBehaviour
 
     private float minus = 0;
 
-    public void OnClick_Play(float duration)
+    [SerializeField] private float duration = 1;
+    public void Start()
     {
         main_Ui[0].GetComponent<RectTransform>().DOAnchorPosX(-1500, duration);
         main_Ui[1].GetComponent<RectTransform>().DOAnchorPosX(1500, duration);
         StartCoroutine("Cutscene");
     }
+    
 
-    IEnumerator Cutscene()
-    {
+    IEnumerator Cutscene() {
 
         for (int i = 0; i < 3; i++)
         {
